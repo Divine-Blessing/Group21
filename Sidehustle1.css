@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Poppins', sans-serif;
+}
+/* NAVBAR SECTION  */
+.navbar{
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+}
+.navbar .logo{
+    width: 50%;
+    padding: 0 20px;
+}
+.navbar ul{
+    width: 50%;
+    padding-left: 200px;
+}
+.nav-links li{
+    display: inline;
+    list-style: none;
+    margin: 20px;   
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    color: rgb(32, 201, 207);
+    cursor: pointer;
+}
+
+/* ABOUT SECTION */
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    align-items: center;
+}
+.intro-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 5em;
+}
+.intro-content h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    width: 60%;
+}
+.intro-content p{
+    font-weight: lighter;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.intro-content button{
+    border-radius: 30px;
+    background-color: rgb(32, 201, 207);
+    color: white;
+    border: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    width: 300px;
+}
+.intro-content a{
+    text-decoration: none;
+    color: white;
+}
+.intro-content button:hover a, button:hover{
+    cursor: pointer;
+    background-color: rgb(21, 142, 146);
+    color: black;
+}
+.illustration-intro{
+    margin: 60px 0 0px 0;
+}
+.illustration-intro img{
+    height: 300px;
+}
+
+/* PANE SECTION */
+.pane{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.pane h3{
+    margin: 10px 0;
+}
+.pane p{
+    line-height: 23px;
+    width: 80%;
+}
+.left-pane,.right-pane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left-top,.right-top,.left-bottom,.right-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+}
+
+/* ILLUSTRATION SECTION */
+.illustration-stay{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 100px;
+    padding: 20px;
+}
+.content h1{
+    width: 60%;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.content p{
+    margin-bottom: 15px;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+.content a{
+    text-decoration: none;
+    color: aquamarine;
+    position: relative;
+}
+.content a::after{
+    position: absolute;
+    content: '';
+    right: 10px;
+    top: 20px;
+    height: 2px;
+    width: 160px;
+    background-color: aquamarine;
+
+}
+.image{
+    margin: 20px;
+    align-items: center;
+}
+.heading{
+    margin-top: 100px;
+}
+
+/* TEAM SECTION */
+.Team{
+    display: flex;
+    flex-direction: row; 
+    margin: 150px 100px 20em 100px;
+}
+.Team p{
+    font-weight: lighter;
+    line-height: 22px;
+}
+.first, .second, .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px; 
+    background-color:  hsl(219, 30%, 18%);  
+    padding: 20px 20px 10px 20px;
+    position: relative;
+    z-index: 999;
+    left: 10px;
+    top: 25px;
+    height: 180px;
+}
+.on-top{
+    position: absolute;
+    z-index: 10;
+}
+.first-content2, .second-content2, .third-content2{
+    display: flex;  
+}
+.first-content2-image, .second-content2-image, .third-content2-image{
+    padding: 10px;
+}
+.first-content2-text, .second-content2-text, .third-content2-text{
+    margin-top: -5px;
+    font-size: 11px;
+}
+
+/* FORM SECTION */
+.make{
+    background-color:  hsl(220, 31%, 13%);   
+    height: 280px;
+    position: absolute;
+    left: 300px;
+    /* bottom: 5px; */
+    top: 2300px;
+    padding: 50px;
+    width: 700px;
+    box-shadow: 20px 20px 100px black;
+    justify-content: center;
+    align-items: center;
+        display: flex;
+        flex-direction: column;
+}
+.make h1{
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.make p{
+    text-align: center;
+    width: 90%;
+}
+.make .flem{
+    display: flex;
+}
+.make input{
+    width: 200px;
+    border: transparent;
+}
+.make button{
+    border: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(32, 201, 207);
+}
+
+
+/* FOOTER SECTION */
+.footer{
+    display: flex;
+    margin-top: 20px;
+}
+.footer p{
+    width: 70%;
+    text-align: left;
+    line-height: 22px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.handle{
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.contact-icon, .contact, .blog, .terms{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 0px 50px;
+}
+.flemmi{
+    display: flex;
+}
+.contact-align{
+    margin: 5px 0px;
+}
+.contact-image{
+    margin: 30px;
+}
+p.latin-align{
+    margin-top: 28px;
+    margin-left: 10px;
+}
+.contact-image2{
+    margin-top: 10px;
+}
+.contact-image3{
+    margin-top: 17px;
+}
+.contact-align1{
+    margin: 5px -80px;
+}
+.form{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 40px 30px 20px 30px;
+    background-color:rgba(1, 6, 39, 0.445);
+    box-shadow: 5px 5px 5px hsl(216deg 53% 9%);
+    position: absolute;
+    top: 140em;
+    left: 18em;   
+}
+.last-box{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 0px 100px;
+    background-color: hsl(216, 53%, 9%);
+    font-size: 15px;
+}
+#input1, #input2{
+    margin-top: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    width: 200px;
+}
+#input1{
+    width: 400px;
+}
+#form-text{
+    margin-top: 2px;
+    font-size: 12px;
+    color: rgb(180, 12, 12);
+}
+
+/* @media screen and (max-width: 520px){   
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    width: auto;
+}
+.navbar .logo img{
+    width: 100px;
+    height: 30px;
+    margin-top: 12%;
+}
+
+.illustration-intro img{
+    width: 300px;
+    height: 300px;
+    margin: 10px auto 1opx auto;
+}
+.intro-content button{
+    width: 200px;
+    padding: 10px;
+}
+.left-pane{
+    margin-top: -20%;
+}
+.left-top{
+    margin-top: 10%;
+}
+.right-top{
+    padding-top: 0;
+}
+.left-bottom{
+    margin-top: 25%;
+}
+.illustration-stay{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    height: 450px;
+   
+}
+.illustration-stay div img{
+   width: 200px;
+   height: 150px;
+}
+.illustration-stay .content{
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 10px;
+    
+}
+.content .heading{
+    margin-top: -1%;
+}
+.Team{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.paragraph p a img{
+    width: 10px;
+    height: 10px;
+}
+.Team img{
+    width: 30px;
+    height: 30px;
+}
+.first, .second,.third{
+    margin-bottom: 10px;
+}
+
+.form{
+    position: absolute;
+    top: 185em;
+    left: 1.8em;
+    width: 350px;
+}
+.form #input1{
+    width: 120px;
+    padding: 2px;
+}
+#input2{
+    width: 100px;
+    padding: 0;
+}
+.last-box{
+    margin-top: 60%;
+    padding: 10px;
+}
+.logo2{
+    margin-top: 50px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-top: 0px;
+}
+.latin{
+    padding-top: 0px;
+}
+
+} */
+
+@media (max-width: 768px){
+    .navbar{
+        width: 100% ;
+    }
+    .navbar .logo{
+        /* border: 2px solid wheat; */
+        width: 35%;
+    }
+    .navbar .logo img{
+        height: 25px;
+        width: 100px;
+    }
+    .navbar ul{
+        width: 40%;
+        padding-left: 0px;
+        /* border: 2px solid yellow; */
+        
+    }
+    .nav-links li{
+        font-size: 18px;
+        margin: 10px;
+    }
+    /* ABOUT SECTION */
+    .About{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .illustration-intro{
+        margin: 30px 0;
+        width: 350px;
+        /* border: 2px solid yellow;
+         */
+    }
+    .illustration-intro img{
+        /* margin-right: 300px; */
+        padding-right: 30px;
+        width: 350px;
+        height: 250px;
+    }
+    .pane{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-pane, .right-pane{
+        display: flex;
+        flex-direction: column;
+    }
+    .pane img{
+        height: 30px;
+    }
+    .pane h3{
+        font-size: 18px;
+    }
+    .pane p{
+        font-size: 15px;
+        width: 30%;
+    }
+    .pane .left-bottom, .pane .left-top, .pane .right-bottom, .pane .right-top{
+        padding: 0;
+        margin: 5px;
+    }
+    .illustration-stay img{
+        height: 200px;
+        width: 250px;
+        margin: 0;
+    }
+    .illustration-stay h1{
+        font-size: 23px;
+        width: 90%;
+    }
+    .illustration-stay p{
+        line-height: 20px;
+    }
+    .illustration-stay .content, .illustration-stay .image{
+        margin: 2px;
+    }
+    .content a::after{
+        display: none;
+    }
+   
+}
+
+
+   
